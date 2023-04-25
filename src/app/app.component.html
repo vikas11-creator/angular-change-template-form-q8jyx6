@@ -1,0 +1,21 @@
+<form #form="ngForm">
+  <label class="form-label">
+     <input [(ngModel)]="options.name" name="name"
+            type="text" class="form-input" >
+     
+   </label>
+   <label class="form-check-label">
+     <input [(ngModel)]="options.o1" name="o1"
+            type="checkbox" class="form-check-input" >
+     Option 1
+   </label>
+   <label class="form-check-label">
+     <input [(ngModel)]="options.o2" name="o2"
+            type="checkbox" class="form-check-input" >
+     Option 2
+   </label>
+</form>
+
+<label>{{updated.o1}}</label>
+<label>{{updated.o2}}</label>
+<label>{{updated.name}}</label>
